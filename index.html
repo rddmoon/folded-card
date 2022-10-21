@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday Friend">
+	<meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Birthday, Happy">
+    <!-- Strat of Facebook Meta -->
+    <meta property="og:type" content="E-Greeting" />
+    <meta property="og:image" content="favicon.png" />
+    <meta property="og:description" content="Wish you a very Happy Birthday">
+    <!-- End of Facebook Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+</head>
+<body>
+  <audio class="song" controls loop>
+        <source src="hbd-cat.mp3"></source>
+     Your browser isn't invited for super fun audio time.
+    </audio>
+		<div class="info">
+			<div class="infoContents">
+				Klik/hover kartu untuk membukanya
+				<br/>
+				<br/>
+				<img src="hand-click.png"></img>
+			</div>
+		</div>
+		<div class="container">
+			<div class="birthdayCard">
+				<div class="cardFront">
+					<div class="happy">
+						<div class="letterH"></div>
+						<div class="letterA"></div>
+						<div class="letterP"></div>
+						<div class="letterP2"></div>
+						<div class="letterY"></div>
+						<div class="letterB"></div>
+						<div class="letterI"></div>
+						<div class="letterR"></div>
+						<div class="letterT"></div>
+						<div class="letterH2"></div>
+						<div class="letterD"></div>
+						<div class="letterA2"></div>
+						<div class="letterY2"></div>
+					</div>
+					<div class="cake">
+						<div class="cake-middle"></div>
+						<div class="cake-top"></div>
+						<div class="candle"></div>
+						<div class="flame"></div>
+					</div>
+					<div class="partydino">
+						<div class="partyText"></div>
+						<div class="dinoOne"></div>
+						<div class="dinoTwo"></div>
+						<div class="dinoThree"></div>
+						<div class="dinoFour"></div>
+						<div class="dinoFive"></div>
+						<div class="dinoSix"></div>
+						<div class="dinoSeven"></div>
+						<div class="dinoEight"></div>
+					</div>
+					<div class="confetti">
+						<div class="squareOne"></div>
+						<div class="squareTwo"></div>
+						<div class="squareThree"></div>
+						<div class="squareFour"></div>
+						<div class="squareFive"></div>
+						<div class="squareSix"></div>
+						<div class="squareSeven"></div>
+						<div class="squareEight"></div>
+						<div class="squareNine"></div>
+						<div class="squareTen"></div>
+					</div>
+				</div>
+				<div class="cardInside">
+					<br />
+					<p>Dear Diva,</p>
+					<p>Happy birthday my bro!</p>
+					<p>I hope your day is filled with lots of love	and joy.
+					<p>
+						I'm wishing you another year full of happiness and blessings.
+						May you be blessed with everything you have been praying for.
+						May you achieve every success that you deserve.
+						May all of your wishes come true.
+					</p>
+					<br />
+					<p>
+						Today is a special day to celebrate you but if I had my way, every
+						day would be a celebration in your honor.
+						We have been a great friend since a long time and a friend like you
+						is a treasure for life.
+						I'm forever grateful.
+					</p>
+					<p>
+						Once again, happy birthday.
+					</p>
+					<div class="myphoto"></div>
+					<p class="name">.yaniar</p>
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<!-- <div class="row">
+				<div class="col-md-6 text-center col-md-offset-3">
+					<button class="btn btn-primary" id="openCard">Buka Kartu</button>
+					<button class="btn btn-primary" id="closeCard">Tutup Kartu</button>
+				</div>
+			</div> -->
+		</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script>
+	$(window).load(function(){
+		$('.info').fadeIn('fast');
+		$('.container').fadeIn('fast');
+	});
+  $('document').ready(function(){
+		var audio = $('.song')[0];
+		audio.play();
+		$('.info').click(function(){
+			$(this).fadeOut('slow');
+		})
+		// $('#openCard').fadeIn('fast');
+		// $('#openCard').click(function(){
+		// 	$(this).fadeOut('slow').promise().done(function(){
+		// 		$('#closeCard').fadeIn('fast');
+		// 		$('.birthdayCard').toggleClass('active')
+		// 	});
+		// });
+		// $('#closeCard').click(function(){
+		// 	$(this).fadeOut('slow').promise().done(function(){
+		// 		$('#openCard').fadeIn('fast');
+		// 		$('.birthdayCard').toggleClass('active')
+		// 	});
+		// });
+		$('.container').click(function(){
+				$('.birthdayCard').toggleClass('active')
+		});
+  });
+</script>
+</html>
